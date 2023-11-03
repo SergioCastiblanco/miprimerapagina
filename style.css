@@ -208,7 +208,9 @@ header div a i{
         margin-left: 120px;
     }
 }
-
+.greeting{
+    background-color: orange;
+}
 
 footer{
     background-color: black;
