@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi pagina web</title>
+    <script src="https://kit.fontawesome.com/c774be0906.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div>
+        <header>
+            <div class="icono-titulo">
+                <a href="index.html"><i class="fa-solid fa-dumbbell"></i></a>
+                <h1>Mi Página Web</h1> 
+            </div>
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Acerca de mi</a></li>
+                    <li><a href="">Trabajos</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="seccion-principal">
+            <br><br><br>
+            <section class="seccion-1">
+                <div class="acercaDe">
+                    <h2 id="tituloAcercaDeMi">Acerca de mí</h2>
+                    <p id="parrafo-1">
+                        ¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.
+                    </p>
+                    <p class="parrafo-2">
+                        Me llamo Sergio, nací en Bogotá y vivo en Bogotá. <br> Me gusta el helado y salir a pasear en dias de sol. <br> Me encantaría aprender a progrmar para poder ayudar <br> a las personas a mostrar lo que hacen.
+                    </p>
+                </div>
+                <div class="acerca-imagen">
+                    <img id="imagen_personal" src="img/imagen_personal.jpeg" alt="Imagen Personal">
+                </div>
+            </section>
+            <section class="seccion-2">
+                <img src="img/carrusel.jpg" alt="Imagen de Carrusel">
+            </section>
+            <section class="seccion-3">
+                <div class="tarjeta">
+                    <div class="imagen-tarjetas">
+                        <img src="img/imagen-tarjetas.jpg" alt="Imagen de tarjeta">
+                    </div>
+                    <h2>Titulo 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus qui illo distinctio commodi! Quam soluta eum voluptatem! Saepe distinctio accusamus ipsam velit recusandae facere vel ex quos. Eos, id ipsum!
+                    </p>
+                    <a href="">Leer más</a>
+                </div>
+                <div class="tarjeta">
+                    <div class="imagen-tarjetas">
+                        <img src="img/imagen-tarjetas.jpg" alt="Imagen de tarjeta">
+                    </div>
+                    <h2>Titulo 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus qui illo distinctio commodi! Quam soluta eum voluptatem! Saepe distinctio accusamus ipsam velit recusandae facere vel ex quos. Eos, id ipsum!
+                    </p>
+                    <a href="">Leer más</a>
+                </div>
+                <div class="tarjeta">
+                    <div class="imagen-tarjetas">
+                        <img src="img/imagen-tarjetas.jpg" alt="Imagen de tarjeta">
+                    </div>
+                    <h2>Titulo 3</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus qui illo distinctio commodi! Quam soluta eum voluptatem! Saepe distinctio accusamus ipsam velit recusandae facere vel ex quos. Eos, id ipsum!
+                    </p>
+                    <a href="">Leer más</a>
+                </div>
+            </section>
+            <section class="seccion-4">
+                <h1>Contacto</h1>
+                <p><em>¡Esperamos tu consulta!</em></p>
+                <form action="" method="get" class="formulario" id="form">
+                    <div class="form-row">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" />
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="pepe@gmail.com"
+                        />
+                    </div>
+                    <div class="form-row">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div id="footer">
+                <h3>Contacto</h3>
+                <nav class="contacto">
+                    <ul>
+                        <li><a href="https://discord.com/" target="_blank">Discord</a></li>
+                        <li><a href="https://www.instagram.com/cbum/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/" target="_blank">TikTok</a></li>
+                        <li><a href="https://www.whatsapp.com/" target="_blank">Whatsapp</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

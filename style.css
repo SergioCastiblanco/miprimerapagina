@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ol, ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Playfair Display', serif;
+}
+.icono-titulo{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+h1{
+    color: white;
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+}
+header{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    position: fixed;
+}
+header nav ul{
+    display: flex;
+    position: relative;
+    right: 30px;
+    gap: 2em;
+}
+header nav ul li a{
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+header div a i{
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    color: lightgray;
+}
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.seccion-1{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3em;
+    gap: 3em;
+}
+.acercaDe{
+    text-align: right;
+}
+.acerca-imagen img{
+    width: 20em;
+    height: 25em;
+}
+.seccion-2 img{
+    width: 100%;
+}
+.seccion-3{
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.tarjeta{
+    padding: 2em;
+}
+.imagen-tarjetas img{
+    width: 100%;
+    border-radius: 10%;
+}
+
+/* Formulario */
+.seccion-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+}
+.form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+ /* ------------- Formulario ------------- */
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+  /* ------------- Campos del Formulario ------------- */
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form-row input[type="text"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+}
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+  
+    border: none;
+    border-radius: 3px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.form-row button:hover {
+    background-color: #76aeed;
+}
+.form-row button:active {
+    background-color: #407fc7;
+}
+@media only screen and (min-width: 700px) {
+
+    .form-header {
+        padding: 50px;
+    }
+  
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .form-row input[type="email"] {
+        width: 250px;
+        height: initial;
+    }
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+    .form-row textarea {
+        width: 250px;
+    }
+    .form-row button {
+        margin-left: 120px;
+    }
+}
+
+
+footer{
+    background-color: black;
+    width: 100%;
+}
+footer h3{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+footer nav ul li a{
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+#footer{
+    padding: 2em;
+    align-items: center;
+    text-align: center;
+} 
+@media (max-width: 768px) {
+    header{
+        background-color: gray;
+    }
+    .seccion-1{
+        align-items: center;
+    }
+    .acercaDe{
+        text-align: center;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .navbar {
+        height: 0vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+        text-align: center;
+    
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    .navbar ul {
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+    }
+    .navbar ul li a {
+        color: #b59a61;
+    }
+      /* ACTIVE */
+    .navbar.active {
+        height: 100vh;
+    }
+    .navbar.active ul{
+        opacity: 1;
+    }
+    /* .
+    .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: lightgray;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul{
+        left: 0%;
+        display: block;
+    }
+    .nvbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    } */
+
+
+
+} 
